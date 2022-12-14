@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>web app</title>
+</head>
+<body>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="students.html">Students</a></li>
+        <li><a href="teachers.html">Teachers</a></li>
+        <li><a class="active" href="parents.html">Parents</a></li>
+      </ul>
+      
+    <main>
+
+        <!-- Load React. -->
+        <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+        <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    
+        
+
+
+
+        <label>Name:</label>
+        <input placeholder="enter name" type="text" id="name-input">
+        <button id="add-name-btn">Add Name</button>
+
+        <br><br><br>
+        <div>
+           <input placeholder="search by name" id="search-input">
+           <button id="search-btn">Search</button>
+        </div>
+
+        <table id="table">
+            <thead>
+                <th>ParentID</th>
+                <th>Name</th>
+                <th>Grade</th>
+                <th>Address</th>
+                <tr>
+                    <td>1000</td>
+                    <td>Jane Smith</td>
+                    <td>A</td>
+                    <td>1 Washington St</td>
+                  </tr>
+
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <section hidden id="update-row">
+            <label>Name:</label>
+            <input type="text" id="update-name-input">
+            <button id="update-row-btn">Update</button>
+        </section>
+
+
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
